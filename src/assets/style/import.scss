@@ -1,4 +1,7 @@
 @import '~@fontsource/montserrat/index.css';
+@import '~@fontsource/montserrat/500.css';
+@import '~@fontsource/montserrat/600.css';
+@import '~@fontsource/montserrat/900.css';
 
 // Reset 
 * {
@@ -10,6 +13,10 @@
 
 header {
     background-image: url('@/assets/img/bg-9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: grey;
 }
 
 a {
@@ -20,8 +27,48 @@ a {
     }
 }
 
+button {
+    padding: 10px 20px;
+    font-weight: 600;
+    color: white;
+}
+
 // classi Utili 
 .container {
     width: min((100% - 20px), 1200px);
     margin: 0 auto;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.btn-header {
+    background: #058283;
+    border: none;
+
+    &:hover {
+        outline: 1px solid #058283;
+        outline-offset: 2px;
+        border-radius: 10px;
+    }
+
+    &:active {
+        background-color: #52bbbb;
+    }
+}
+
+.btn-trasparent {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid #058283;
+
+    &:hover {
+        outline: 1px solid #058283;
+        outline-offset: 2px;
+        border-radius: 10px;
+    }
+
+    &:active {
+        background-color: #52bbbb;
+    }
 }
