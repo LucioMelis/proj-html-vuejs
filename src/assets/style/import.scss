@@ -1,5 +1,6 @@
 @import '~@fontsource/montserrat/index.css';
 
+// Reset 
 * {
     font-family: 'Montserrat', sans-serif;
     padding: 0;
@@ -7,6 +8,19 @@
     box-sizing: border-box;
 }
 
+header {
+    background-image: url('@/assets/img/bg-9.jpg');
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        border-bottom: 1px solid;
+    }
+}
+
+// classi Utili 
 .container {
     width: min((100% - 20px), 1200px);
     margin: 0 auto;
