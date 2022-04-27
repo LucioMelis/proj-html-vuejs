@@ -17,7 +17,8 @@ import { faTruckRampBox } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-library.add(faClock, faPhone, faEnvelope, faFacebookF, faLocationDot, faQuoteRight, faGem, faTwitter, faLinkedinIn, faUser, faTemperatureLow, faTruckRampBox, faBoxesStacked)
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+library.add(faClock, faPhone, faEnvelope, faFacebookF, faLocationDot, faQuoteRight, faGem, faTwitter, faLinkedinIn, faUser, faTemperatureLow, faTruckRampBox, faBoxesStacked, faArrowRight)
 
 Vue.config.productionTip = false
 

@@ -57,6 +57,15 @@
               <p>{{ vehicles.weight }}</p>
             </div>
           </div>
+          <h3 class="title-c">Certifications</h3>
+          <div class="certification">
+            <div>
+              <img src="@/assets/img/certificate.png" alt="Certificate" />
+            </div>
+            <div>
+              <img src="@/assets/img/certificate.png" alt="Certificate" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -132,7 +141,7 @@ export default {
       }
     }
     & .img-vehicle {
-      width: 150px;
+      width: 100px;
       border: 1px solid lightgray;
       padding: 10px;
       background-color: $bg-title;
@@ -143,6 +152,19 @@ export default {
     }
     .vehicle {
       flex-grow: 1;
+    }
+    .title-c {
+      padding-top: 20px;
+    }
+    .certification {
+      display: flex;
+      column-gap: 10px;
+      div {
+        width: 130px;
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }

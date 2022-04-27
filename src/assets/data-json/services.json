@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Tecnology",
+        "description": "We are continually focused on developing technology solutions adapted yo our client's needs.",
+        "icon": "fa-truck-ramp-box"
+    },
+    {
+        "title": "Reefer Cargo",
+        "description": "Regular and frequent monitoring from the receipt of the loaded container to final destination.",
+        "icon": "fa-temperature-low"
+    },
+    {
+        "title": "Dry Cargo",
+        "description": "We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care.",
+        "icon": "fa-temperature-low"
+    }
+]
