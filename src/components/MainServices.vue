@@ -9,10 +9,23 @@
           to customer service. We will work hard to understand your needs in
           order to develop a productive, long-term partnership.
         </p>
-        <div><button class="btn-trasparent">SEE ALL</button></div>
+        <div>
+          <button @click="SeeAll" class="btn-trasparent">SEE ALL</button>
+        </div>
       </div>
       <div class="container-services">
-        <CardServices />
+        <CardServices
+          v-for="(service, index) in services"
+          :key="index"
+          :serviceType="service"
+        />
+        <div v-if="show === true" class="container-services">
+          <CardServices
+            v-for="(service, index) in services"
+            :key="'cardNascoste' + index"
+            :serviceType="service"
+          />
+        </div>
       </div>
     </div>
   </section>
@@ -22,11 +35,21 @@
 import CardServices from "@/components/CardServices.vue";
 export default {
   name: "MainServices",
+  data() {
+    return {
+      show: false,
+    };
+  },
   components: {
     CardServices,
   },
   props: {
     services: Array,
+  },
+  methods: {
+    SeeAll() {
+      this.show = !this.show;
+    },
   },
 };
 </script>
@@ -62,7 +85,9 @@ section {
     }
     .container-services {
       padding-top: 20px;
-      width: calc(100% / 3);
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 25px;
     }
   }
 }

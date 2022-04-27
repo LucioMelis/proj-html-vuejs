@@ -48,7 +48,11 @@
         <!-- Container Vehicle Types  -->
         <div class="vehicle-types">
           <h3>Vehicle Types</h3>
-          <div class="types" v-for="vehicles in vehicleTypes" :key="vehicles">
+          <div
+            class="types"
+            v-for="(vehicles, index) in vehicleTypes"
+            :key="index"
+          >
             <div class="img-vehicle">
               <img src="@/assets/img/truck-1.png" alt="Truck" />
             </div>
@@ -74,7 +78,7 @@
 
 <script>
 export default {
-  name: "WhoWeAre",
+  name: "WhoWheAre",
   props: {
     vehicleTypes: Array,
   },

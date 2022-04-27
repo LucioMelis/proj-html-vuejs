@@ -5,19 +5,16 @@
         <div>
           <font-awesome-icon
             class="icon-size"
-            icon="fa-solid fa-truck-ramp-box"
+            :icon="['fa-solid', serviceType.icon]"
           />
         </div>
         <div>
           <font-awesome-icon icon="fa-solid fa-arrow-right" />
         </div>
       </div>
-      <h3>Tecnology</h3>
+      <h3>{{ serviceType.title }}</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minima
-        aperiam debitis velit nostrum placeat veritatis numquam deserunt
-        delectus nulla illum eum, doloremque hic voluptates repellat obcaecati
-        unde voluptatum neque?
+        {{ serviceType.description }}
       </p>
     </div>
   </div>
@@ -26,6 +23,9 @@
 <script>
 export default {
   name: "CardServices",
+  props: {
+    serviceType: Object,
+  },
 };
 </script>
 
@@ -34,6 +34,7 @@ export default {
 .card {
   background-color: #19191f;
   border-radius: 15px;
+  width: calc(100% / 3 - 25px);
 }
 .content-card {
   padding: 30px;
