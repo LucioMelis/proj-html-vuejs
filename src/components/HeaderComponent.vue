@@ -54,9 +54,18 @@
           Fractional or exclusive road cargo transportation to all regions,with
           small,medium and large vehicles.
         </p>
+        <p v-if="showMore" class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ex
+          nihil culpa, dicta quisquam accusantium optio consequatur aspernatur
+          vitae earum cumque quidem expedita nobis, quasi repellendus! Minima
+          blanditiis doloremque obcaecati. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Quo adipisci saepe ipsam dolore, minus
+          officia sapiente excepturi sequi, nemo similique vel voluptatum
+          dignissimos nostrum nihil quibusdam ab rem maiores labore.
+        </p>
         <div>
           <button class="btn-header">GET IN TOUCH</button>
-          <button class="btn-trasparent">READ MORE</button>
+          <button @click="readMore" class="btn-trasparent">READ MORE</button>
         </div>
       </div>
     </div>
@@ -69,7 +78,13 @@ export default {
   data() {
     return {
       menuNav: ["HOME", "ABOUT", "SERVICES", "PROCESS", "TESTIMONIALS"],
+      showMore: false,
     };
+  },
+  methods: {
+    readMore() {
+      this.showMore = !this.showMore;
+    },
   },
 };
 </script>

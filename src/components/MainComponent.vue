@@ -3,6 +3,7 @@
     <!-- Sezione Who We Are - Vehicle Types  -->
     <WhoWeAre :vehicleTypes="vehicleTypes" />
     <MainServices :services="services" />
+    <LogisticalProcedure :logistical="logistical" />
   </div>
 </template>
 
@@ -10,9 +11,11 @@
 // Componenti Main
 import WhoWeAre from "@/components/WhoWheAre.vue";
 import MainServices from "@/components/MainServices.vue";
+import LogisticalProcedure from "@/components/LogisticalProcedure.vue";
 // Data Main
 import vehicleTypes from "@/assets/data-json/vehicle-types";
 import services from "@/assets/data-json/services";
+import logistical from "@/assets/data-json/logistical-procedure";
 
 export default {
   name: "MainComponent",
@@ -20,11 +23,13 @@ export default {
     return {
       vehicleTypes,
       services,
+      logistical,
     };
   },
   components: {
     WhoWeAre,
     MainServices,
+    LogisticalProcedure,
   },
 };
 </script>

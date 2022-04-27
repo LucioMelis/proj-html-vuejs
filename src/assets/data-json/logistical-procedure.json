@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Collection of information",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+        "number": "01"
+    },
+    {
+        "title": "Service Invoice Sending",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+        "number": "02"
+    },
+    {
+        "title": "Withdrawal of Cargo",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+        "number": "03"
+    },
+    {
+        "title": "Transport Customer Order",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+        "number": "04"
+    },
+    {
+        "title": "Successful Delivery",
+        "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+        "number": "05"
+    }
+]
