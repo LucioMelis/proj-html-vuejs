@@ -87,6 +87,7 @@ section {
       padding-top: 20px;
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
       column-gap: 25px;
     }
   }
