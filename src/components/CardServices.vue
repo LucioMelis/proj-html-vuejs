@@ -8,7 +8,7 @@
             :icon="['fa-solid', serviceType.icon]"
           />
         </div>
-        <div>
+        <div class="icon-arrow">
           <font-awesome-icon icon="fa-solid fa-arrow-right" />
         </div>
       </div>
@@ -35,6 +35,10 @@ export default {
   background-color: #19191f;
   border-radius: 15px;
   width: calc(100% / 3 - 25px);
+  &:hover {
+    outline: 1px solid $bg-button;
+    outline-offset: 2px;
+  }
 }
 .content-card {
   padding: 30px;
@@ -60,6 +64,12 @@ export default {
   }
   p {
     color: $color-text;
+  }
+  .icon-arrow:hover {
+    cursor: pointer;
+    &:active {
+      font-size: 10px;
+    }
   }
 }
 </style>
