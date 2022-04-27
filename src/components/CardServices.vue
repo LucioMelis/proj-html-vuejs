@@ -53,9 +53,6 @@ export default {
       background-color: $bg-title-dark;
       padding: 10px;
       border-radius: 50%;
-      .icon-size {
-        font-size: 25px;
-      }
     }
   }
   h3 {

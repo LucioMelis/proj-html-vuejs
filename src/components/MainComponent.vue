@@ -5,6 +5,7 @@
     <MainServices :services="services" />
     <LogisticalProcedure :logistical="logistical" />
     <ResultsNumbers />
+    <CustomerTestimonials />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import WhoWeAre from "@/components/WhoWheAre.vue";
 import MainServices from "@/components/MainServices.vue";
 import LogisticalProcedure from "@/components/LogisticalProcedure.vue";
 import ResultsNumbers from "@/components/ResultsNumbers.vue";
+import CustomerTestimonials from "@/components/CustomerTestimonials.vue";
 // Data Main
 import vehicleTypes from "@/assets/data-json/vehicle-types";
 import services from "@/assets/data-json/services";
@@ -33,6 +35,7 @@ export default {
     MainServices,
     LogisticalProcedure,
     ResultsNumbers,
+    CustomerTestimonials,
   },
 };
 </script>
