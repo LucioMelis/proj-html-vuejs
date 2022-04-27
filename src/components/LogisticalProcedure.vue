@@ -43,6 +43,7 @@ export default {
 section {
   margin: 80px 0;
   .content-section {
+    padding: 20px 0;
     .logistical-procedure {
       text-align: center;
       padding-bottom: 30px;
@@ -69,6 +70,7 @@ section {
         }
         .position {
           position: relative;
+          margin-bottom: 10px;
           span {
             position: absolute;
             display: block;
