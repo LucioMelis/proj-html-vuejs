@@ -1,0 +1,14 @@
+[
+    {
+        "size": "Light",
+        "weight": "Max Weight 1200 Kg"
+    },
+    {
+        "size": "Medium",
+        "weight": "Max Weight 6000 Kg"
+    },
+    {
+        "size": "Heavy",
+        "weight": "Max Weight 24000 Kg"
+    }
+]

@@ -46,7 +46,18 @@
           </ul>
         </div>
         <!-- Container Vehicle Types  -->
-        <div class="vehicle-types"></div>
+        <div class="vehicle-types">
+          <h3>Vehicle Types</h3>
+          <div class="types" v-for="vehicles in vehicleTypes" :key="vehicles">
+            <div class="img-vehicle">
+              <img src="@/assets/img/truck-1.png" alt="Truck" />
+            </div>
+            <div class="vehicle">
+              <h4>{{ vehicles.size }}</h4>
+              <p>{{ vehicles.weight }}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -55,6 +66,9 @@
 <script>
 export default {
   name: "WhoWeAre",
+  props: {
+    vehicleTypes: Array,
+  },
 };
 </script>
 
@@ -102,6 +116,34 @@ export default {
   }
   .vehicle-types {
     width: 30%;
+    h3 {
+      padding-bottom: 20px;
+    }
+    .types {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      border-bottom: 1px solid $color-text-darker;
+      padding: 15px 0;
+      &:hover {
+        &:hover {
+          outline: 2px solid $bg-title;
+        }
+      }
+    }
+    & .img-vehicle {
+      width: 150px;
+      border: 1px solid lightgray;
+      padding: 10px;
+      background-color: $bg-title;
+      border-radius: 5px;
+      img {
+        width: 100%;
+      }
+    }
+    .vehicle {
+      flex-grow: 1;
+    }
   }
 }
 </style>

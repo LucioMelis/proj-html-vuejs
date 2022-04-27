@@ -1,15 +1,21 @@
 <template>
   <div>
     <!-- Sezione Who We Are - Vehicle Types  -->
-    <WhoWeAre />
+    <WhoWeAre :vehicleTypes="vehicleTypes" />
   </div>
 </template>
 
 <script>
 import WhoWeAre from "@/components/WhoWheAre.vue";
+import vehicleTypes from "@/assets/data-json/vehicle-types";
 
 export default {
   name: "MainComponent",
+  data() {
+    return {
+      vehicleTypes,
+    };
+  },
   components: {
     WhoWeAre,
   },
