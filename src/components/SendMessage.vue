@@ -51,7 +51,7 @@
               ><font-awesome-icon
                 class="icon"
                 icon="fa-solid fa-circle-xmark"
-              />Inserisci tutti i campi</span
+              />Messaggio non inoltrato! Inserisci tutti i campi</span
             >
           </div>
         </div>
