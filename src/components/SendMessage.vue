@@ -32,7 +32,32 @@
           </div>
         </div>
         <!-- sezione right  -->
-        <div class="contacts"></div>
+        <div class="contacts">
+          <h3>Exemple Inc.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+            expedita dolores.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+            expedita dolores.
+          </p>
+          <div>
+            <font-awesome-icon class="icon" icon="fa-solid fa-phone" />
+            <span><a href="#">+1(305) 1234-5678</a></span>
+          </div>
+          <div>
+            <font-awesome-icon class="icon" icon="fa-solid fa-envelope" />
+            <span><a href="#">hello@example.com</a></span>
+          </div>
+          <div>
+            <font-awesome-icon class="icon" icon="fa-solid fa-envelope" />
+            <span><a href="#">Main Avenue, 987</a></span>
+          </div>
+          <div>
+            <button class="btn-trasparent">VIEW MAP</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -98,6 +123,36 @@ section {
       }
     }
     .contacts {
+      width: 30%;
+      & > * {
+        padding-bottom: 20px;
+      }
+      & p {
+        color: $color-text-darker;
+      }
+      .icon,
+      a {
+        color: $bg-button;
+      }
+      span {
+        margin-left: 15px;
+      }
+      .icon {
+        background-color: #daeced;
+        padding: 10px;
+        border-radius: 50%;
+      }
+      div {
+        display: flex;
+        align-items: center;
+      }
+      .btn-trasparent {
+        background-color: white;
+        color: $bg-button;
+        &:active {
+          background-color: #52bbbb;
+        }
+      }
     }
   }
 }
