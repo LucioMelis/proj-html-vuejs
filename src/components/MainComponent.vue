@@ -6,6 +6,7 @@
     <LogisticalProcedure :logistical="logistical" />
     <ResultsNumbers />
     <CustomerTestimonials />
+    <SendMessage />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import MainServices from "@/components/MainServices.vue";
 import LogisticalProcedure from "@/components/LogisticalProcedure.vue";
 import ResultsNumbers from "@/components/ResultsNumbers.vue";
 import CustomerTestimonials from "@/components/CustomerTestimonials.vue";
+import SendMessage from "@/components/SendMessage.vue";
 // Data Main
 import vehicleTypes from "@/assets/data-json/vehicle-types";
 import services from "@/assets/data-json/services";
@@ -36,6 +38,7 @@ export default {
     LogisticalProcedure,
     ResultsNumbers,
     CustomerTestimonials,
+    SendMessage,
   },
 };
 </script>
