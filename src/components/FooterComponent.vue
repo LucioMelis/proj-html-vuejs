@@ -27,7 +27,11 @@
           </div>
         </div>
         <div class="container-footer-link">
-          <CardFooter />
+          <CardFooter
+            v-for="(info, index) in ArrayInfo"
+            :key="index"
+            :info="info"
+          />
         </div>
       </div>
     </div>
@@ -38,8 +42,14 @@
 
 <script>
 import CardFooter from "@/components/CardFooter.vue";
+import ArrayInfo from "@/assets/data-json/link.json";
 export default {
   name: "FooterComponent",
+  data() {
+    return {
+      ArrayInfo,
+    };
+  },
   components: {
     CardFooter,
   },

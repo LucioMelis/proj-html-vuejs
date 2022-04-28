@@ -1,0 +1,35 @@
+[
+    {
+        "title": "About",
+        "link": [
+            "The Company",
+            "Institutional",
+            "Social & Event",
+            "Innovation",
+            "Environment",
+            "Technology"
+        ]
+    },
+    {
+        "title": "Transport",
+        "link": [
+            "Industrialized",
+            "Chemicals",
+            "Packaged Liquids",
+            "Costruction",
+            "Laminated Wood",
+            "And others"
+        ]
+    },
+    {
+        "title": "Support",
+        "link": [
+            "Responsability",
+            "Terms of Use",
+            "About Cookies",
+            "Privacy Policy",
+            "Accessibility",
+            "Information"
+        ]
+    }
+]

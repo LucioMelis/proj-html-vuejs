@@ -1,31 +1,11 @@
 <template>
   <div class="container-card-footer">
     <div class="content-card">
-      <h3>About</h3>
+      <h3>{{ info.title }}</h3>
       <ul>
-        <li>
+        <li v-for="(link, index) in info.link" :key="index">
           <font-awesome-icon icon="fa-solid fa-angle-right" />
-          <a href="#">Ciao</a>
-        </li>
-        <li>
-          <font-awesome-icon icon="fa-solid fa-angle-right" />
-          <a href="#">Ciao</a>
-        </li>
-        <li>
-          <font-awesome-icon icon="fa-solid fa-angle-right" />
-          <a href="#">Ciao</a>
-        </li>
-        <li>
-          <font-awesome-icon icon="fa-solid fa-angle-right" />
-          <a href="#">Ciao</a>
-        </li>
-        <li>
-          <font-awesome-icon icon="fa-solid fa-angle-right" />
-          <a href="#">Ciao</a>
-        </li>
-        <li>
-          <font-awesome-icon icon="fa-solid fa-angle-right" />
-          <a href="#">Ciao</a>
+          <a href="#">{{ link }}</a>
         </li>
       </ul>
     </div>
@@ -35,6 +15,9 @@
 <script>
 export default {
   name: "CardFooter",
+  props: {
+    info: Object,
+  },
 };
 </script>
 
@@ -49,6 +32,7 @@ export default {
     h3 {
       font-weight: 600;
       padding-bottom: 15px;
+      color: white;
     }
     li {
       list-style-type: none;
@@ -58,6 +42,6 @@ export default {
 }
 a {
   color: $color-text;
-  margin-left: 5px;
+  margin-left: 12px;
 }
 </style>
