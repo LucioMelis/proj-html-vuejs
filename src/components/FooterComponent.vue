@@ -2,7 +2,7 @@
   <footer>
     <!-- Sezione top Footer -->
     <div class="footer-top">
-      <div class="container">
+      <div class="container container-flex">
         <div class="container-footer-info">
           <div class="img-logo">
             <img src="@/assets/img/logo.svg" alt="logoNextgen" />
@@ -34,7 +34,16 @@
       </div>
     </div>
     <!-- Sezione Bottom Footer  -->
-    <div class="footer-bottom"></div>
+    <div class="footer-bottom">
+      <a href="#header"
+        ><font-awesome-icon class="icon icon-up" icon="fa-solid fa-arrow-up"
+      /></a>
+
+      <div class="container container-copy">
+        <p>Enjoy the low price. We are tracking any intention of piracy.</p>
+        <p>&copy; 2020 NEXGEN is Proudly Powered by <span>Codings</span></p>
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -87,11 +96,36 @@ export default {
     column-gap: 10px;
   }
 }
+.footer-bottom {
+  background-color: black;
+  color: $color-text;
+  position: relative;
+  & p {
+    font-size: 12px;
+    padding: 25px 0;
+  }
+}
 a {
   color: $color-text;
   margin-left: 10px;
 }
-.container {
+.container-flex {
   display: flex;
+}
+.container-copy {
+  display: flex;
+  justify-content: space-between;
+  span {
+    color: $bg-button;
+  }
+}
+.icon-up {
+  background-color: #29292d;
+  color: black;
+  padding: 10px 13px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15px;
+  right: 5px;
 }
 </style>
