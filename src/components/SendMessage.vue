@@ -8,11 +8,21 @@
           <h1>Get in <span class="light">Touch</span></h1>
           <p>We will respond to your message as soon as possible.</p>
           <div class="name-email">
-            <input type="text" placeholder="Name" required />
-            <input type="email" placeholder="Email" required />
+            <input v-model="datiNome" type="text" placeholder="Name" required />
+            <input
+              v-model="datiEmail"
+              type="email"
+              placeholder="Email"
+              required
+            />
           </div>
           <div class="name-email">
-            <input type="number" placeholder="Phone" required />
+            <input
+              v-model="datiPhone"
+              type="text"
+              placeholder="Phone"
+              required
+            />
             <select class="form-select">
               <option selected>More Info</option>
               <option value="1">Cliente</option>
@@ -21,6 +31,7 @@
             </select>
           </div>
           <textarea
+            v-model="datiArea"
             name="Message"
             id="prova"
             cols="107"
@@ -28,7 +39,20 @@
             placeholder="Messages"
           ></textarea>
           <div class="btn-message">
-            <button class="btn-header">SEND</button>
+            <button @click="datiInseriti" class="btn-header">SEND</button>
+            <span v-if="this.showMessage === 2"
+              ><font-awesome-icon
+                class="icon"
+                icon="fa-solid fa-circle-check"
+              />Messaggio inoltrato con successo! Un nostro operatore ti
+              contatterà a breve</span
+            >
+            <span class="error-message" v-if="this.showMessage === 3"
+              ><font-awesome-icon
+                class="icon"
+                icon="fa-solid fa-circle-xmark"
+              />Inserisci tutti i campi</span
+            >
           </div>
         </div>
         <!-- sezione right  -->
@@ -55,7 +79,15 @@
             <span><a href="#">Main Avenue, 987</a></span>
           </div>
           <div>
-            <button class="btn-trasparent">VIEW MAP</button>
+            <button @click="goToGoogleMaps" class="btn-trasparent">
+              VIEW MAP
+            </button>
+          </div>
+          <div v-if="showMaps === true" class="img-maps">
+            <img
+              src="https://i.stack.imgur.com/uzHgF.png"
+              alt="Main Avenue,97"
+            />
           </div>
         </div>
       </div>
@@ -67,6 +99,41 @@
 <script>
 export default {
   name: "SendMessage",
+  data() {
+    return {
+      showMaps: false,
+      datiNome: "",
+      datiEmail: "",
+      datiPhone: "",
+      datiArea: "",
+      showMessage: 1,
+    };
+  },
+  methods: {
+    goToGoogleMaps() {
+      this.showMaps = !this.showMaps;
+    },
+    datiInseriti() {
+      if (
+        this.datiNome.length > 0 &&
+        this.datiEmail.length > 0 &&
+        this.datiPhone.length > 0 &&
+        this.datiArea.length > 0
+      ) {
+        this.showMessage = 2;
+        this.datiNome = "";
+        this.datiEmail = "";
+        this.datiPhone = "";
+        this.datiArea = "";
+      } else {
+        this.showMessage = 3;
+        this.datiNome = "";
+        this.datiEmail = "";
+        this.datiPhone = "";
+        this.datiArea = "";
+      }
+    },
+  },
 };
 </script>
 
@@ -119,7 +186,20 @@ section {
         border-radius: 5px;
       }
       .btn-message {
-        padding-top: 30px;
+        padding-top: 40px;
+        span {
+          margin-left: 15px;
+          padding: 10px;
+          color: $bg-button;
+        }
+        .error-message {
+          margin-left: 15px;
+          padding: 10px;
+          color: red;
+        }
+        .icon {
+          margin-right: 5px;
+        }
       }
     }
     .contacts {
@@ -151,6 +231,13 @@ section {
         color: $bg-button;
         &:active {
           background-color: #52bbbb;
+        }
+      }
+      .img-maps {
+        width: 180px;
+        padding-bottom: 0px;
+        img {
+          width: 100%;
         }
       }
     }
