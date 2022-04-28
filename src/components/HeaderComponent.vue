@@ -101,7 +101,7 @@ export default {
       } else if (string === "TESTIMONIALS") {
         return "#testimonials";
       }
-      return "#";
+      return "#header";
     },
   },
 };
