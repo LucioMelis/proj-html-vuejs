@@ -26,7 +26,9 @@
             </button>
           </div>
         </div>
-        <div class="container-footer-link"></div>
+        <div class="container-footer-link">
+          <CardFooter />
+        </div>
       </div>
     </div>
     <!-- Sezione Bottom Footer  -->
@@ -35,8 +37,12 @@
 </template>
 
 <script>
+import CardFooter from "@/components/CardFooter.vue";
 export default {
   name: "FooterComponent",
+  components: {
+    CardFooter,
+  },
 };
 </script>
 
@@ -64,10 +70,16 @@ export default {
   }
   .container-footer-link {
     width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 a {
   color: $color-text;
   margin-left: 10px;
+}
+.container {
+  display: flex;
 }
 </style>

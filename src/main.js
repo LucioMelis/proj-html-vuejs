@@ -20,7 +20,8 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
-library.add(faClock, faPhone, faEnvelope, faFacebookF, faLocationDot, faQuoteRight, faGem, faTwitter, faLinkedinIn, faUser, faTemperatureLow, faTruckRampBox, faBoxesStacked, faArrowRight, faCircleCheck, faCircleXmark)
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+library.add(faClock, faPhone, faEnvelope, faFacebookF, faLocationDot, faQuoteRight, faGem, faTwitter, faLinkedinIn, faUser, faTemperatureLow, faTruckRampBox, faBoxesStacked, faArrowRight, faCircleCheck, faCircleXmark, faAngleRight)
 
 Vue.config.productionTip = false
 
