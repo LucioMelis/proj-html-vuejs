@@ -75,7 +75,10 @@
             <span><a href="#">hello@example.com</a></span>
           </div>
           <div>
-            <font-awesome-icon class="icon" icon="fa-solid fa-envelope" />
+            <font-awesome-icon
+              class="icon dot"
+              icon="fa-solid fa-location-dot"
+            />
             <span><a href="#">Main Avenue, 987</a></span>
           </div>
           <div>
@@ -221,6 +224,9 @@ section {
         background-color: #daeced;
         padding: 10px;
         border-radius: 50%;
+        &.dot {
+          padding: 10px 13px;
+        }
       }
       div {
         display: flex;
