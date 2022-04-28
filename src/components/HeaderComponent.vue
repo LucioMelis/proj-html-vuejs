@@ -18,9 +18,15 @@
             <font-awesome-icon class="icon" icon="fa-solid fa-envelope" />
             <span><a href="#">hello@example.com</a></span>
           </div>
-          <font-awesome-icon class="icon" icon="fa-brands fa-facebook-f" />
-          <font-awesome-icon class="icon" icon="fa-brands fa-twitter" />
-          <font-awesome-icon class="icon" icon="fa-brands fa-linkedin-in" />
+          <a class="link" href="https://it-it.facebook.com/">
+            <font-awesome-icon class="icon" icon="fa-brands fa-facebook-f" />
+          </a>
+          <a class="link" href="https://twitter.com/?lang=it">
+            <font-awesome-icon class="icon" icon="fa-brands fa-twitter" />
+          </a>
+          <a class="link" href="https://it.linkedin.com/">
+            <font-awesome-icon class="icon" icon="fa-brands fa-linkedin-in" />
+          </a>
         </div>
       </div>
     </div>
@@ -95,6 +101,7 @@ export default {
       } else if (string === "TESTIMONIALS") {
         return "#testimonials";
       }
+      return "#";
     },
   },
 };
@@ -174,5 +181,8 @@ export default {
     color: $color-text;
     padding-bottom: 30px;
   }
+}
+.link {
+  border: none;
 }
 </style>
