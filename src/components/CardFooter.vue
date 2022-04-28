@@ -25,8 +25,8 @@ export default {
 @import "@/assets/style/variabili.scss";
 .container-card-footer {
   background-color: #19191f;
-  border-radius: 15px;
-  width: calc(100% / 3);
+  border-radius: 5px;
+  width: calc(100% / 3 - 10px);
   .content-card {
     padding: 30px;
     h3 {

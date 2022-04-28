@@ -21,9 +21,7 @@
             <span><a href="#">Main Avenue, 987</a></span>
           </div>
           <div>
-            <button @click="goToGoogleMaps" class="btn-trasparent">
-              VIEW MAP
-            </button>
+            <button class="btn-trasparent">GET IN TOUCH</button>
           </div>
         </div>
         <div class="container-footer-link">
@@ -68,6 +66,9 @@ export default {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    & div:last-child {
+      padding-top: 20px;
+    }
     .img-logo {
       width: 150px;
       img {
@@ -83,6 +84,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    column-gap: 10px;
   }
 }
 a {
