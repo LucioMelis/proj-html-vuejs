@@ -139,6 +139,7 @@ export default {
       border-bottom: 1px solid $color-text-darker;
       padding: 15px 0;
       &:hover {
+        cursor: pointer;
         &:hover {
           outline: 2px solid $bg-title;
         }
