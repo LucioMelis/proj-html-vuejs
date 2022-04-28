@@ -34,7 +34,7 @@
       <div class="container-nav">
         <ul>
           <li v-for="element in menuNav" :key="element">
-            <a href="#">{{ element }}</a>
+            <a :href="ritonaId(element)">{{ element }}</a>
           </li>
         </ul>
         <div>
@@ -84,6 +84,17 @@ export default {
   methods: {
     readMore() {
       this.showMore = !this.showMore;
+    },
+    ritonaId(string) {
+      if (string === "ABOUT") {
+        return "#whoweare";
+      } else if (string === "SERVICES") {
+        return "#mainservices";
+      } else if (string === "PROCESS") {
+        return "#logistical";
+      } else if (string === "TESTIMONIALS") {
+        return "#testimonials";
+      }
     },
   },
 };

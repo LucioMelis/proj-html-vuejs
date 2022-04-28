@@ -1,11 +1,11 @@
 <template>
   <div>
     <!-- Sezione Who We Are - Vehicle Types  -->
-    <WhoWeAre :vehicleTypes="vehicleTypes" />
-    <MainServices :services="services" />
-    <LogisticalProcedure :logistical="logistical" />
+    <WhoWeAre :vehicleTypes="vehicleTypes" id="whoweare" />
+    <MainServices :services="services" id="mainservices" />
+    <LogisticalProcedure :logistical="logistical" id="logistical" />
     <ResultsNumbers />
-    <CustomerTestimonials />
+    <CustomerTestimonials id="testimonials" />
     <SendMessage />
   </div>
 </template>
