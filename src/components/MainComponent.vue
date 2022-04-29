@@ -6,7 +6,7 @@
     <LogisticalProcedure :logistical="logistical" id="logistical" />
     <ResultsNumbers />
     <CustomerTestimonials id="testimonials" />
-    <SendMessage />
+    <SendMessage id="sendmessage" />
   </div>
 </template>
 

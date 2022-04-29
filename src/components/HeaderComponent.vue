@@ -47,7 +47,9 @@
           <font-awesome-icon class="icon" icon="fa-regular fa-user" />
         </div>
         <div>
-          <button class="btn btn-header">GET IN TOUCH</button>
+          <a href="#sendmessage">
+            <button class="btn btn-header">GET IN TOUCH</button>
+          </a>
         </div>
       </div>
     </nav>
