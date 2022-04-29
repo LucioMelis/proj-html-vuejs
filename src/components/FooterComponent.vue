@@ -21,7 +21,9 @@
             <span><a href="#">Main Avenue, 987</a></span>
           </div>
           <div>
-            <button class="btn-trasparent">GET IN TOUCH</button>
+            <a class="no-border" href="#sendmessage"
+              ><button class="btn-trasparent">GET IN TOUCH</button></a
+            >
           </div>
         </div>
         <div class="container-footer-link">
@@ -127,5 +129,9 @@ a {
   position: absolute;
   bottom: 15px;
   right: 5px;
+}
+
+.no-border {
+  border: none;
 }
 </style>
